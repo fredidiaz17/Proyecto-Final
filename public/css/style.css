@@ -1,0 +1,101 @@
+html, body {
+    height: 100%; /* Asegura que el cuerpo tome el 100% del alto */
+    background-color: #FFFACD; /* Color de fondo amarillo claro (Lemon Chiffon) */
+    color: #333; /* Color del texto en un tono oscuro */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1; /* Toma el espacio restante entre el contenido y el footer */
+    text-align: center;
+    padding: 50px;
+}
+
+.footer {
+    background-color: #FFD700; /* Color amarillo dorado para el footer */
+    padding: 40px 0;
+}
+
+.footer a {
+    color: #333; /* Color del enlace en un tono oscuro */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #333;
+}
+
+/* Estilo de las líneas divisorias */
+.footer .col-md-3 {
+    border-bottom: 1px solid #333;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.footer h5 {
+    margin-bottom: 15px;
+}
+
+.navbar {
+    padding: 15px 0;
+    background-color: #FFFFE0; /* Fondo amarillo claro para el navbar (Light Yellow) */
+}
+
+.navbar-brand img {
+    border-radius: 50%; /* Hace que el logo tenga forma circular */
+}
+
+.navbar-nav .nav-link {
+    color: #333; /* Color oscuro para los enlaces */
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFA500; /* Color naranja (Orange) al pasar el mouse */
+}
+
+/* Estilo para mantener el botón activo (Inicio, Foro, Acerca de Nosotros) */
+.navbar-nav .nav-link.active {
+    color: #FFA500;
+    border-bottom: 2px solid #FFA500;
+}
+
+/* Estilo del botón Login */
+.navbar .btn-primary {
+    background-color: #FFA500; /* Color naranja para el botón Login */
+    border: none;
+}
+
+.navbar .btn-primary:hover {
+    background-color: #FF8C00; /* Color naranja más oscuro (Dark Orange) */
+}
+
+
+/* Ajuste responsive para que el contenido del footer se apile verticalmente en pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer .col-md-3 {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    .footer .col-md-3 ul {
+        padding-left: 0;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
